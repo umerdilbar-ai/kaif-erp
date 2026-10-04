@@ -1,6 +1,5 @@
-import { ComingSoon } from "@/components/shell/ComingSoon";
-import { L } from "@/lib/labels";
+import { PurchaseScreen } from "./PurchaseScreen";
 
 export default function Page() {
-  return <ComingSoon title={L.purchase} />;
+  return <PurchaseScreen />;
 }

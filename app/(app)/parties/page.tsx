@@ -1,6 +1,5 @@
-import { ComingSoon } from "@/components/shell/ComingSoon";
-import { L } from "@/lib/labels";
+import { PartiesScreen } from "./PartiesScreen";
 
 export default function Page() {
-  return <ComingSoon title={L.parties} />;
+  return <PartiesScreen />;
 }
