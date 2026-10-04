@@ -1,6 +1,10 @@
-import { ComingSoon } from "@/components/shell/ComingSoon";
-import { L } from "@/lib/labels";
+import type { VoucherType } from "@/lib/types";
+import { VouchersScreen } from "@/components/s3/VouchersScreen";
 
-export default function Page() {
-  return <ComingSoon title={L.vouchers} />;
+const MODES: VoucherType[] = ["RECEIPT", "PAYMENT", "EXPENSE"];
+
+export default async function VouchersPage({ searchParams }: { searchParams: Promise<{ mode?: string }> }) {
+  const { mode } = await searchParams;
+  const initial = MODES.find((m) => m === mode) ?? null;
+  return <VouchersScreen initialMode={initial} />;
 }
