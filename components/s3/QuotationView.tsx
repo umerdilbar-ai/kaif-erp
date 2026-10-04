@@ -1,7 +1,6 @@
 "use client";
 
 import { useEffect, useState } from "react";
-import Link from "next/link";
 import { AlertTriangle, BadgeCheck, CheckCircle2, Plus, Printer } from "lucide-react";
 import { BigButton, MoneyText, useDing } from "@/components/ui-kaif";
 import { createClient } from "@/lib/supabase/client";
